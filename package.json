@@ -1,6 +1,6 @@
 {
   "name": "ern-container-transformer-xcframework",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "android",
     "electrode",
@@ -21,7 +21,7 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp src/generate-xcframework.sh dist",
     "prepare": "yarn build"
   },
   "dependencies": {
